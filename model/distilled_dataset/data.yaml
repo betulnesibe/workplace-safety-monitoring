@@ -1,0 +1,6 @@
+path: model/distilled_dataset
+train: images/train
+val: images/val
+
+nc: 10
+names: ['Hardhat', 'Mask', 'NO-Hardhat', 'NO-Mask', 'NO-Safety Vest', 'Person', 'Safety Cone', 'Safety Vest', 'Machinery', 'Vehicle']
