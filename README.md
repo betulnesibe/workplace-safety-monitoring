@@ -136,15 +136,7 @@ streamlit run app.py
    - Increase the frame skip value
    - Close other resource-intensive applications
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
+## Acknowledgements
 
 - YOLO model architecture and implementation
 - Streamlit for the web application framework
