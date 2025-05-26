@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 (venv) (base) bbb@Nesibes-MacBook-Pro workplace-safety-monitoring % yolo val \\                  \
+  model=outputs/yolov8n-tuned2/weights/best.pt \\\
+  data=model/dataset/data.yaml \\\
+  split=test \\\
+  augment=True \\\
+  name=tta_eval  \
+Ultralytics 8.3.143 \uc0\u55357 \u56960  Python-3.12.7 torch-2.7.0 CPU (Apple M4 Pro)\
+Model summary (fused): 72 layers, 3,007,598 parameters, 0 gradients, 8.1 GFLOPs\
+val: Fast image access \uc0\u9989  (ping: 0.0\'b10.1 ms, read: 205.1\'b167.2 MB/s, size: 49.8 KB)\
+val: Scanning /Users/bbb/Projects/swe/workplace-safety-monitoring\
+                 Class     Images  Instances      Box(P          \
+                   all         82        760      0.842      0.696      0.759      0.475\
+               Hardhat         30        110       0.95      0.809      0.902       0.58\
+                  Mask         16         28      0.939       0.75      0.754      0.557\
+            NO-Hardhat         25         41      0.742      0.562       0.57      0.319\
+               NO-Mask         30         79      0.796      0.593      0.688      0.314\
+        NO-Safety Vest         36         90      0.857        0.8      0.834       0.52\
+                Person         59        174      0.795      0.828      0.871      0.539\
+           Safety Cone          8         92      0.796       0.34      0.422       0.19\
+           Safety Vest         22         61      0.849      0.827       0.91      0.587\
+             Machinery         22         44       0.95      0.818      0.904      0.666\
+               Vehicle         15         41      0.747      0.634      0.739      0.473\
+Speed: 1.1ms preprocess, 238.0ms inference, 0.0ms loss, 0.6ms postprocess per image\
+Results saved to runs/detect/tta_eval\
+\uc0\u55357 \u56481  Learn more at https://docs.ultralytics.com/modes/val\
+VS Code: view Ultralytics VS Code Extension \uc0\u9889  at https://docs.ultralytics.com/integrations/vscode}

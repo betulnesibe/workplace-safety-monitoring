@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 (venv) (base) bbb@Nesibes-MacBook-Pro workplace-safety-monitoring % # Repeat this for each fold\
+yolo task=detect mode=val \\\
+  model=runs/detect/crossval/fold_0_run/weights/best.pt \\\
+  data=model/dataset/data.yaml split=test name=fold0_eval\
+zsh: command not found: #\
+Ultralytics 8.3.143 \uc0\u55357 \u56960  Python-3.12.7 torch-2.7.0 CPU (Apple M4 Pro)\
+Model summary (fused): 72 layers, 3,007,598 parameters, 0 gradients, 8.1 GFLOPs\
+val: Fast image access \uc0\u9989  (ping: 0.0\'b10.0 ms, read: 1124.7\'b1712.4 MB/s, size: 52.2 KB)\
+val: Scanning /Users/bbb/Projects/swe/workplace-safety-monitoring/model/dataset/labels/test.cache.\
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|\uc0\u9608 \u9608 \u9608 \
+                   all         82        760      0.863      0.701      0.764      0.459\
+               Hardhat         30        110      0.989      0.834      0.922      0.611\
+                  Mask         16         28      0.973       0.75      0.763      0.513\
+            NO-Hardhat         25         41      0.829      0.591      0.577      0.274\
+               NO-Mask         30         79      0.907      0.608       0.77      0.359\
+        NO-Safety Vest         36         90      0.923      0.767      0.824      0.502\
+                Person         59        174      0.846       0.82      0.877      0.542\
+           Safety Cone          8         92      0.802       0.38      0.443      0.197\
+           Safety Vest         22         61      0.871      0.836      0.903      0.564\
+             Machinery         22         44      0.861      0.818      0.844       0.61\
+               Vehicle         15         41      0.626       0.61      0.716      0.415\
+Speed: 0.9ms preprocess, 104.6ms inference, 0.0ms loss, 0.4ms postprocess per image\
+Results saved to runs/detect/fold0_eval\
+\uc0\u55357 \u56481  Learn more at https://docs.ultralytics.com/modes/val\
+VS Code: view Ultralytics VS Code Extension \uc0\u9889  at https://docs.ultralytics.com/integrations/vscode\
+}
